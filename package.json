@@ -1,0 +1,150 @@
+{
+  "name": "dharma-dispatch",
+  "version": "1.0.0",
+  "description": "News aggregation app that correlates global political events with Bhagavad Gita teachings",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/frontend/src",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint frontend/src/",
+    "lint:fix": "eslint frontend/src/ --fix",
+    "format": "prettier --write frontend/src/",
+    "start": "serve -s frontend/src -l 3000",
+    "deploy:netlify": "netlify deploy --prod --dir=frontend/src",
+    "deploy:vercel": "vercel --prod",
+    "deploy:github": "gh-pages -d frontend/src",
+    "docker:build": "docker build -t dharmadispatch .",
+    "docker:run": "docker run -p 3000:80 dharmadispatch",
+    "setup": "npm install && npm run build",
+    "clean": "rm -rf node_modules dist .cache"
+  },
+  "keywords": [
+    "news",
+    "bhagavad-gita", 
+    "dharma",
+    "political-news",
+    "world-affairs",
+    "vedic-wisdom",
+    "spiritual-technology",
+    "hindu-philosophy",
+    "news-aggregation",
+    "social-forum"
+  ],
+  "author": {
+    "name": "DharmaDispatch Team",
+    "email": "contact@dharmadispatch.org",
+    "url": "https://github.com/sudhu90/DharmaDispatch"
+  },
+  "contributors": [
+    {
+      "name": "Sudarshan TS",
+      "email": "tssudarshan@prodbrew.com",
+      "url": "https://github.com/sudhu90"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sudhu90/DharmaDispatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sudhu90/DharmaDispatch/issues"
+  },
+  "homepage": "https://dharmadispatch.org",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-html": "^7.1.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.0.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  },
+  "optionalDependencies": {
+    "netlify-cli": "^16.3.0",
+    "vercel": "^32.2.5",
+    "gh-pages": "^6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"],
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.js",
+      "<rootDir>/frontend/src/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "frontend/src/**/*.js",
+      "!frontend/src/**/*.test.js",
+      "!frontend/src/index.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"]
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "prefer-const": "error"
+    },
+    "ignorePatterns": [
+      "dist/",
+      "node_modules/",
+      "coverage/"
+    ]
+  },
+  "config": {
+    "port": 3000,
+    "apiUrl": "https://api.dharmadispatch.org",
+    "version": "1.0.0"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sudhu90"
+  },
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
