@@ -1,6 +1,6 @@
 # DharmaDispatch - Dharma in World Affairs
 
-A revolutionary news aggregation application that correlates global political events with the timeless teachings of the Bhagavad Gita, helping the Indian community understand world affairs through the lens of dharmic principles.
+A news aggregation application that correlates global political events with the timeless teachings of the Bhagavad Gita, helping the Indian community understand world affairs through the lens of dharmic principles.
 
 ## 🌟 Vision & Purpose
 
@@ -332,7 +332,7 @@ DharmaDispatch aims to become the world's premier platform for understanding glo
 
 ## 🙏 Dedication
 
-This project is dedicated to Lord Krishna, the eternal teacher of dharma, and all the great sages who have preserved and transmitted the wisdom of the Bhagavad Gita for humanity's welfare.
+This project is dedicated to humans, various life forms in the universe, and all the great sages who have preserved and transmitted the wisdom of the Bhagavad Gita for humanity's welfare.
 
 > "यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।
 > अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम्॥"
@@ -343,5 +343,4 @@ This project is dedicated to Lord Krishna, the eternal teacher of dharma, and al
 For more information, visit our [website](https://github.com/sudhu90/DharmaDispatch) or contact the development team.
 
 ---
-**DharmaDispatch Team**
-*Serving Truth through Technology*
+**DharmaDispatch oneTeam**
